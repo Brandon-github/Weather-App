@@ -1,0 +1,27 @@
+{
+  "coord": { "lon": -77.4297, "lat": 20.9881 },
+  "weather": [
+    { "id": 500, "main": "Rain", "description": "light rain", "icon": "10d" }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 302.05,
+    "feels_like": 306.8,
+    "temp_min": 302.05,
+    "temp_max": 302.05,
+    "pressure": 1016,
+    "humidity": 76,
+    "sea_level": 1016,
+    "grnd_level": 1008
+  },
+  "visibility": 10000,
+  "wind": { "speed": 4.39, "deg": 50, "gust": 5.55 },
+  "rain": { "1h": 0.42 },
+  "clouds": { "all": 62 },
+  "dt": 1627077532,
+  "sys": { "country": "CU", "sunrise": 1627036808, "sunset": 1627084317 },
+  "timezone": -14400,
+  "id": 3563856,
+  "name": "Colombia",
+  "cod": 200
+}
