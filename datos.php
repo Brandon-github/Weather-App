@@ -1,11 +1,17 @@
 <?php
     session_start();
 
+    require __DIR__ . '/vendor/autoload.php';
+    
+    // Carga de variables de entorno
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
+
     // ciudad recibida
     $nombre_ciudad = $_POST['pais'];
 
     //datos API REST para consumir
-    $llave_api = '4951e220d0e7efe17e9c9341421854db';
+    $llave_api = $_ENV['API_KEY'];
     $direccion_api = 'https://api.openweathermap.org/data/2.5/weather?q='.$nombre_ciudad.'&appid='.$llave_api;
 
     // Obtencion de datos en json
